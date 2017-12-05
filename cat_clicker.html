@@ -1,13 +1,17 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script>
 $(document).ready(function(){
-	var count=0;
+	var firstCatCount= 0;
+    var secondCatCount = 0;
     $("#firstCat").click(function(){
-    	
-        $("p").text(' The count is ' + ++count);
+        $("#firstCatCount").text(' The count for first count is ' + ++firstCatCount);
+    });
+    
+    $("#secondCat").click(function(){
+        $("#secondCatCount").text(' The count for second count is ' + ++secondCatCount);
     });
 });
 </script>
@@ -15,7 +19,10 @@ $(document).ready(function(){
 <body>
 
 <img id='firstCat' src='https://img.buzzfeed.com/buzzfeed-static/static/2014-04/enhanced/webdr06/4/16/enhanced-23752-1396643152-1.jpg?downsize=715:*&output-format=auto&output-quality=auto'>
-<p></p>
+
+<img id='secondCat' src='https://i0.wp.com/catnamescity.com/wp-content/uploads/2012/08/Cute-Girl-Cat-Names.jpg?resize=300%2C200'>
+<p id='firstCatCount'></p>
+<p id='secondCatCount'></p>
 
 
 
